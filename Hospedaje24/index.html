@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <form name="forma1" id="forma1" action="#">
+    <div class="container">    
+        <div class="row py-3">
+            <div class="col-12 col-md-6">
+                <label for="entrada"><strong class="colorasterisco">*</strong> Entrada:</label>
+                <input type="date" required name="entrada" id="entrada" class="form-control">
+            </div>
+            <div class="col-12 col-md-6">
+                <label for="salida"><strong class="colorasterisco">*</strong> Salida:</label>
+                <input type="date" required name="salida" id="salida" class="form-control">
+            </div>
+        </div>      
+        <div class="row">
+            <div class="col-12">
+                <div class="row py-3">
+                    <div class="col-6 col-md-3 text-center mb-3">                                                                                           
+                        <input type="radio" name="estatus" value="0" checked>                                    
+                        <div style="border:1px solid gray; width:100%;background-color:#FFFFFF">NO ASIGNADO</div> 
+                    </div>                
+                    <div class="col-6 col-md-3 text-center mb-3">                                                                                           
+                        <input type="radio" name="estatus" value="2" id="porNoche">                                    
+                        <div style="border:1px solid gray; width:100%;background-color:#b7e1cd">POR NOCHE</div> 
+                    </div>
+                    <div class="col-6 col-md-3 text-center mb-3">                                                                                           
+                        <input type="radio" name="estatus" value="3" >                                    
+                        <div style="border:1px solid gray; width:100%;background-color:#afff99">POR SEMANA</div> 
+                    </div>
+                    <div class="col-6 col-md-3 text-center mb-3">                                                                                           
+                        <input type="radio" name="estatus" value="4" >                                    
+                        <div style="border:1px solid gray; width:100%;background-color:#ff66ff">POR MES</div> 
+                    </div>
+                    <div class="col-6 col-md-3 text-center mb-3">                                                                                           
+                        <input type="radio" name="estatus" value="5" >                                    
+                        <div style="border:1px solid gray; width:100%;background-color:#66ffff">POR CUATRIMESTRE</div> 
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="row py-2">
+            <div class="col-md-12 text-center">
+                    <button type="submit" id="btnEnviar" class="btn btn-primary">AGREGAR</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+
+<!--
+
+<script src="/moments/js/lib/moment/moment.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+-->
+
+<script>
+    let entrada = document.getElementById('entrada');
+    let salida = document.getElementById('salida');
+    let noche = document.getElementById('porNoche')
+    entrada.valueAsDate = new Date();
+    salida.valueAsDate = new Date();
+
+    let btnEnviar = document.getElementById('btnEnviar');
+
+    let formulario = document.getElementById('forma1');
+
+    /* Este evento es para checar que la fecha de entrada no sea igual o menor a la fecha de salida */ 
+
+    const m = moment();
+
+    function fechaSalida(salida){
+        return salida
+    }
+
+    noche.addEventListener('click', () => {
+        console.log('funciona')
+
+        console.log(`fecha Salida: ${salida.value.toString()}`);
+
+        const fechaSalida = entrada.valueAsDate;
+        fechaSalida.setDate(fechaSalida.getDate() + 7);
+        console.log(fechaSalida)
+        /*
+        const userDate = new Date('2023-03-24');
+        userDate.setDate(userDate.getDate() + 7);
+        console.log(userDate); // muestra la fecha actualizada en la consola
+
+
+        
+
+        let x = salida.value;
+        const y = fechaSalida(x);
+
+        console.log(`fecha Salida: ${y.toString()}`);
+
+        y.add(1,"d");
+
+        console.log(`fecha Salida: ${y.toString()}`);
+
+        console.log(`fecha original: ${salida.value.toString()}`);
+
+        salida.value.add(1, "d");
+
+        console.log(`fecha final: ${salida.value.toString()}`);
+        */
+        //salida.add(7, 'dias');
+        //console.log(salida)
+        //salida.value = ('2005-05-05')
+    })
+
+    formulario.addEventListener("submit", (event) => {
+
+        if (entrada.value == salida.value)
+        {
+            alert("La fecha de entrada y salida deben ser diferentes");
+            event.preventDefault();
+            return false;
+        }
+        else if (entrada.value > salida.value)
+            {
+                alert("La fecha de entrada debe ser anterior a la de salida");
+                event.preventDefault();
+                return false;
+            }
+    });
+
+</script>
+
+</body>
+</html>
