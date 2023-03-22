@@ -27,20 +27,20 @@
                         <input type="radio" name="estatus" value="0" checked>                                    
                         <div style="border:1px solid gray; width:100%;background-color:#FFFFFF">NO ASIGNADO</div> 
                     </div>                
-                    <div class="col-6 col-md-3 text-center mb-3">                                                                                           
+                    <div class="col-6 col-md-3 text-center mb-3">          
                         <input type="radio" name="estatus" value="2" id="porNoche">                                    
                         <div style="border:1px solid gray; width:100%;background-color:#b7e1cd">POR NOCHE</div> 
                     </div>
                     <div class="col-6 col-md-3 text-center mb-3">                                                                                           
-                        <input type="radio" name="estatus" value="3" >                                    
+                        <input type="radio" name="estatus" value="3" id="porSemana">                                    
                         <div style="border:1px solid gray; width:100%;background-color:#afff99">POR SEMANA</div> 
                     </div>
                     <div class="col-6 col-md-3 text-center mb-3">                                                                                           
-                        <input type="radio" name="estatus" value="4" >                                    
+                        <input type="radio" name="estatus" value="4" id="porMes">                                    
                         <div style="border:1px solid gray; width:100%;background-color:#ff66ff">POR MES</div> 
                     </div>
                     <div class="col-6 col-md-3 text-center mb-3">                                                                                           
-                        <input type="radio" name="estatus" value="5" >                                    
+                        <input type="radio" name="estatus" value="5" id="porCuatrimestre">                                    
                         <div style="border:1px solid gray; width:100%;background-color:#66ffff">POR CUATRIMESTRE</div> 
                     </div>
                 </div>
@@ -58,17 +58,13 @@
 
 <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
 
-<!--
-
-<script src="/moments/js/lib/moment/moment.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
--->
-
 <script>
     let entrada = document.getElementById('entrada');
     let salida = document.getElementById('salida');
-    let noche = document.getElementById('porNoche')
+    let noche = document.getElementById('porNoche');
+    let semana = document.getElementById('porSemana');
+    let mes = document.getElementById('porMes');
+    let cuatrimestre = document.getElementById('porCuatrimestre');
     entrada.valueAsDate = new Date();
     salida.valueAsDate = new Date();
 
@@ -76,49 +72,49 @@
 
     let formulario = document.getElementById('forma1');
 
-    /* Este evento es para checar que la fecha de entrada no sea igual o menor a la fecha de salida */ 
+    let fechaFinal = document.getElementById("salida");
 
-    const m = moment();
-
-    function fechaSalida(salida){
-        return salida
-    }
 
     noche.addEventListener('click', () => {
-        console.log('funciona')
+        var fechaFinal= document.getElementById("salida");
+        var momentoEntrada = moment(entrada.valueAsDate).format('yyyy-MM-DD');
+        var momentoSalida = moment(momentoEntrada).add(2,'days').format('yyyy-MM-DD');
 
-        console.log(`fecha Salida: ${salida.value.toString()}`);
+        fechaFinal.value = momentoSalida;
+    });
 
-        const fechaSalida = entrada.valueAsDate;
-        fechaSalida.setDate(fechaSalida.getDate() + 7);
-        console.log(fechaSalida)
-        /*
-        const userDate = new Date('2023-03-24');
-        userDate.setDate(userDate.getDate() + 7);
-        console.log(userDate); // muestra la fecha actualizada en la consola
+    semana.addEventListener('click', () => {
+        var fechaFinal= document.getElementById("salida");
+        var momentoEntrada = moment(entrada.valueAsDate).format('yyyy-MM-DD');
+        var momentoSalida = moment(momentoEntrada).add(8,'days').format('yyyy-MM-DD');
 
+        fechaFinal.value = momentoSalida;
+    });
 
-        
+    mes.addEventListener('click', () => {
+        var fechaFinal= document.getElementById("salida");
 
-        let x = salida.value;
-        const y = fechaSalida(x);
+        var momentoEntrada = moment(entrada.valueAsDate).format('yyyy-MM-DD');
+        console.log(momentoEntrada);
 
-        console.log(`fecha Salida: ${y.toString()}`);
+        var momentoSalida = moment(momentoEntrada).add(1,'month').add(1,'days').format('yyyy-MM-DD');
+        console.log(momentoSalida)
 
-        y.add(1,"d");
+        fechaFinal.value = momentoSalida;
+    });
 
-        console.log(`fecha Salida: ${y.toString()}`);
+    cuatrimestre.addEventListener('click', () => {
+        var fechaFinal= document.getElementById("salida");
 
-        console.log(`fecha original: ${salida.value.toString()}`);
+        var momentoEntrada = moment(entrada.valueAsDate).format('yyyy-MM-DD');
+        console.log(momentoEntrada);
 
-        salida.value.add(1, "d");
+        var momentoSalida = moment(momentoEntrada).add(4,'month').add(1,'days').format('yyyy-MM-DD');
+        console.log(momentoSalida)
 
-        console.log(`fecha final: ${salida.value.toString()}`);
-        */
-        //salida.add(7, 'dias');
-        //console.log(salida)
-        //salida.value = ('2005-05-05')
-    })
+        fechaFinal.value = momentoSalida;
+    });
+
 
     formulario.addEventListener("submit", (event) => {
 
