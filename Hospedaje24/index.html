@@ -74,6 +74,10 @@
 
     let fechaFinal = document.getElementById("salida");
 
+    function agregarMes(fecha, n = 1) {
+        return new Date(fecha.setMonth(fecha.getMonth() + n));
+    }
+
 
     noche.addEventListener('click', () => {
         var fechaFinal= document.getElementById("salida");
@@ -95,12 +99,57 @@
         var fechaFinal= document.getElementById("salida");
 
         var momentoEntrada = moment(entrada.valueAsDate).format('yyyy-MM-DD');
-        console.log(momentoEntrada);
+        console.log(momentoEntrada); 
 
+        var x = new Date(momentoEntrada);
+        console.log(x);
+
+        x.setMonth(x.getMonth() + 1);
+        console.log(x);
+
+        var momentoSalida = x;
+        console.log(momentoSalida);
+
+        var momentoSalida = x;
+        console.log(momentoSalida);
+        
+        var y = moment(momentoSalida.valueAsDate).format('yyyy-MM-DD');
+        console.log(y);
+
+        /*
+        var momentoEntrada = moment(entrada.valueAsDate).format('yyyy-MM-DD');
+        console.log(momentoEntrada);
+        */
+
+        var fechas = new Date(momentoEntrada);
+        console.log(fechas); 
+
+        fechas.setMonth(fechas.getMonth() + 1);
+        var fechaFinal = new Date(fechas).toLocaleDateString();
+        console.log(fechaFinal);
+
+        /*
         var momentoSalida = moment(momentoEntrada).add(1,'month').add(1,'days').format('yyyy-MM-DD');
         console.log(momentoSalida)
 
+        */
+
         fechaFinal.value = momentoSalida;
+
+        // Creas la fecha
+        var fecha = new Date(2023, 03, 01);
+ 
+        // Añades los meses
+        fecha.setMonth(fecha.getMonth() + 3);
+        var fechaSalida = new Date(fecha).toLocaleDateString()
+        console.log(fechaSalida);
+        /*
+        let fecha = new Date(12, 05, 03);
+
+        let resultado = agregarMes(fecha, 2);
+        let resultadoFormato = resultado;
+        console.log(resultado);
+        */
     });
 
     cuatrimestre.addEventListener('click', () => {
