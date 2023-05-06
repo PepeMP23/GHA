@@ -55,7 +55,6 @@
 </form>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
 
 <script>
@@ -95,11 +94,17 @@
         fechaFinal.value = momentoSalida;
     });
 
-    mes.addEventListener('click', () => {
+    mes.addEventListener('click', () => { 
         var fechaFinal= document.getElementById("salida");
 
         var momentoEntrada = moment(entrada.valueAsDate).format('yyyy-MM-DD');
         console.log(momentoEntrada); 
+
+        var momentoSalida = moment(momentoEntrada).add(1,'month').add(1,'days').format('yyyy-MM-DD');
+        console.log(momentoSalida)
+
+        fechaFinal.value = momentoSalida;
+
 
         var x = new Date(momentoEntrada);
         console.log(x);
@@ -110,7 +115,7 @@
         var momentoSalida = x;
         console.log(momentoSalida);
 
-        var momentoSalida = x;
+        var momentoSalida = x; 
         console.log(momentoSalida);
         
         var y = moment(momentoSalida.valueAsDate).format('yyyy-MM-DD');
