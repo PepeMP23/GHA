@@ -1,0 +1,35 @@
+.titulo{
+    color: #2DA736;
+    font-size: 20px;
+}
+
+.boton{
+    background-color: #2B2B27;
+    color: white;
+}
+
+#footer{
+    background-color: #2B2B27;
+    color: white;
+}
+
+.hr-footer{
+    background-color: #2DA736;
+    height: 5px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#footer p{
+    margin: 0;
+}
+
+#iconos {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#iconos > * {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
