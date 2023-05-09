@@ -31,16 +31,6 @@
     margin-top: 20px;
 }
 
-#imagenJalisco img, #ItalianEG img, #expoGuadalajara img, #Deutsche img {
-    width: 100vw;
-}
-
-@media (max-width: 767px) {
-    #imagenJalisco img, #ItalianEG img, #expoGuadalajara img, #Deutsche img {
-      width: 250px;
-    }
-}
-
 .boton{
     background-color: #2B2B27;
     color: white;
