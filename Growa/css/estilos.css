@@ -3,9 +3,32 @@
     font-size: 20px;
 }
 
+.barraCentral{
+    background-color: rgb(169,200,19);
+}
+
+.registroVisitantes{
+    background-color: #2DA736;
+    margin: 10px auto;
+}
+
+.sectorBarraCentral{
+    color: white;
+}
+
+.sectorBarraCentral p{
+    margin-bottom: 0;
+}
+
+.sectorBarraCentral a{
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
 .boton{
     background-color: #2B2B27;
     color: white;
+    border-radius: 2px;
 }
 
 #footer{
@@ -15,6 +38,7 @@
 
 .hr-footer{
     background-color: #2DA736;
+    border: 0;
     height: 5px;
     margin: 0;
     margin-bottom: 5px;
