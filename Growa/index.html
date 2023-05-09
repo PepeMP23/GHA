@@ -12,11 +12,11 @@
 <body>
     <div id="header" class="container m-0">
         <div class="row m-0">
-            <div class="col-12 col-md-4 pl-5">
-                <img src="imagenes/GROWA Logo_Mesa de trabajo 1.1.jpg" alt="Logo Mesa Trabajo" class="w-100">
+            <div class="col-12 col-md-4 pl-5 centradoVertical">
+                <img src="imagenes/GROWA Logo_Mesa de trabajo 1.1.jpg" alt="Logo Mesa Trabajo" class="w-100 py-4">
             </div>
             <div class="col-md-1"></div>
-            <div class="col-12 col-md-7 pl-4 pt-2">
+            <div class="col-12 col-md-7 pl-4 pt-4">
                 <p>Somos especialistas en los campos de <b>instalaciones eléctricas, riego, automatización y calefacción para horticultura</b></p>
                 <h2 class="titulo"> <i> La tecnología es nuestra pasión </i> </h2>
                 <p>Ninguna instalación es igual, <b>damos soluciones duraderas y confiables</b></p>
@@ -26,35 +26,36 @@
     <div class="container-fluid m-0">
         <div class="row">
             <div class="col-12 m-0 p-0">
-                <img src="imagenes/GrowaFecha.jpeg" alt="portada" class="w-100 m-0">
+                <img src="imagenes/Linkedin-AgroTech copia.jpg" alt="portada" class="w-100 m-0">
             </div>
         </div>
     </div>
     <div class="container-fluid m-0 barraCentral">
         <div class="row m-0 p-0">
-            <div class="col-12 col-md-2 mt-5">
-                <img src="imagenes/GROWA_Deutsche_Messe.png" alt="portada" class="w-100 m-0">
+            <div id="Deutsche" class="col-12 col-md-2 mt-5 centradoVertical">
+                <img src="imagenes/GROWA_Deutsche_Messe.png" alt="portada" class="m-0">
             </div>
-            <div class="col-12 col-md-2 mt-5 p-0">
-                <img src="imagenes/GROWA_Italian_Exhibition.png" alt="portada" class="w-100 m-0">
+            <div id="italinEGroup" class="col-12 col-md-2 mt-5 p-0 centradoVertical">
+                <img src="imagenes/GROWA_Italian_Exhibition.png" alt="portada" class="m-0">
             </div>
             <div class="col-11 col-md-2 p-3 registroVisitantes sectorBarraCentral">
                 <p>REGISTRO VISITANTES</p>
                 <p>Ingresa nuestro código </p>
                 <p>GROWA23</p>
-                <a class="btn btn-light" href="https://agrotech.registrosc.mx/" role="button">REGISTRO</a>
+                <p></p>
+                <a class="btn btn-light" href="https://agrotech.registrosc.mx/" target="_blank" role="button">REGISTRO</a>
             </div>
             <div class="col-11 col-md-3 m-0 p-3 sectorBarraCentral">
                 <p>EXPO GUADALAJARA</p>
                 <p>Av. Mariano Otero #1499</p>
                 <p>Col. Verde Valle, Guadalajara, Jalisco, México.</p>
-                <a class="btn btn-light" href="https://goo.gl/maps/qRyGvrFbT8hyuJKi9?coh=178572&entry=tt" target="_blank" role="button">GOOGLE MAPS</a>
+                <a class="btn btn-light mt-2" href="https://goo.gl/maps/qRyGvrFbT8hyuJKi9?coh=178572&entry=tt" target="_blank" role="button">GOOGLE MAPS</a>
             </div>
-            <div class="col-12 col-md-2 mt-5 p-0">
-                <img src="imagenes/GROWA_Expo_Guadalajara.png" alt="portada" class="w-100 m-0">
+            <div id="expoGuadalajara"  class="col-12 col-md-2 mt-5 p-0 centradoVertical">
+                <img src="imagenes/GROWA_Expo_Guadalajara.png" alt="portada" class="m-0">
             </div>
-            <div class="col-12 col-md-1 mt-4 p-0">
-                <img src="imagenes/GROWA_Jalisco.png" alt="portada" class="w-100 m-0">
+            <div id="imagenJalisco" class="col-12 col-md-1 mt-4 mb-4 p-0 centradoVertical" >
+                <img src="imagenes/GROWA_Jalisco.png" alt="portada" class="m-0">
             </div>
         </div>
     </div>
@@ -62,42 +63,37 @@
     <div class="container-fluid mt-4">
         <div class="row">
             <div class="col-12 col-md-5 px-5 mb-3">
-                <form >
-                    <div class="row">
-                        <div class="col-12">
-                            <p> <b> CONTÁCTANOS </b> </p>
-                            <p>Agradecemos cualquier comentario o sugerencia a tráves de nuestro formulario de contacto</p>
+                <form>
+                    <fieldset>
+                        <div class="row">
+                            <div class="col-12">
+                                <p> <b> CONTÁCTANOS </b> </p>
+                                <p>Agradecemos cualquier comentario o sugerencia a tráves de nuestro formulario de contacto</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-12">
-                            <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="bg-light w-100">
+                        <input type="text"  name="nombre" id="nombre" placeholder="Nombre" class="form-control bg-light w-100 mb-2">
+                        <div class="row mb-2">
+                            <div class="col-12 col-md-6">
+                                <input type="text"  name="telefono" id="telefono" placeholder="Teléfono" class="form-control bg-light w-100 mb-2">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="mail"  name="email" id="email" placeholder="Correo electrónico" class="form-control bg-light w-100">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-6">
-                            <input type="text" name="telefono" id="telefono" placeholder="Teléfono" class="bg-light w-100">
-                        </div>
-                        <div class="col-6">
-                            <input type="mail" name="email" id="email" placeholder="Correo electrónico" class="bg-light w-100">
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-12">
-                            <textarea name="mensaje" id="mensaje" placeholder="Mensaje" rows="10" class="w-100"></textarea>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn w-100 boton">Enviar</button>
+                        <textarea name="mensaje" id="mensaje" rows="10" class="form-control w-100 h-100 mb-2" placeholder="Mensaje"></textarea>
+
+                        <button type="submit" class="btn w-100 boton">Enviar</button>
+                    </fieldset>
                 </form>
             </div>
-            <div class="col-12 col-md-7 px-5">
-                <img src="imagenes/GROWA_Campo.jpg" alt="campo verde" class="w-100">
+            <div class="col-12 col-md-7 centradoVertical px-5">
+                <img src="imagenes/GROWA_Campo.jpg" alt="campo verde" class="w-100 ">
             </div>
         </div>
     </div>
     <div id="footer" class="container-fluid pt-3 mt-4">
         <div class="row">
-            <div class="col-12 col-md-5 px-5 mb-4">
+            <div class="col-12 col-md-3 px-5 mb-4">
                 <div class="row">
                     <p>GROWA GREENHOUSE SYSTEMS</p>
                     <hr class="hr-footer">
@@ -111,23 +107,70 @@
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-2 px-5 mb-4">
+            <div class="col-12 col-md-3 px-5 mb-4">
                 <div class="row">
                     <p>Privacidad y términos</p>
                     <hr class="hr-footer">
                 </div>
                 <div class="row">
-                    <p>Aviso de privacidad</p>
-                    <p>Términos y Condiciones de Uso</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class=" botonFooter" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Aviso de privacidad
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="exampleModalLabel">AVISO DE PRIVACIDAD</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Protección de datos personales.</p>
+                                
+                                Con fundamento en los artículos 15 y 16 de la Ley Federal de Protección de Datos Personales en Posesión de Particulares hacemos de su conocimiento que GROWA, GREEN HOUSE SYSTEMS BY STOLZE, es responsable de recabar sus datos personales, del uso que se le da a los mismos y de su protección. Utilizará sus datos personales, recabados por este medio, con la finalidad de mantener contacto con Usted, atenderle y establecer la relación comercial necesaria relacionada con los objetivos de esta empresa.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class=" botonFooter" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Términos y Condiciones de Uso
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="exampleModalLabel">TÉRMINOS Y CONDICIONES DE USO</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Aplicables a este sitio web.</p>
+                                
+                                Con fundamento en los artículos 15 y 16 de la Ley Federal de Protección de Datos Personales en Posesión de Particulares hacemos de su conocimiento que GROWA, GREEN HOUSE SYSTEMS BY STOLZE, es responsable de recabar sus datos personales, del uso que se le da a los mismos y de su protección. Utilizará sus datos personales, recabados por este medio, con la finalidad de mantener contacto con Usted, atenderle y establecer la relación comercial necesaria relacionada con los objetivos de esta empresa.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-2 px-5 mb-4">
+            <div class="col-12 col-md-3 px-5 mb-4">
                 <div class="row">
                     <p>Hablemos</p>
                     <hr class="hr-footer">
                 </div>
                 <div class="row">
-                    <p>+52 462 607 0277</p>
+                    <a href="tel:524626070277" class="telefono">4626070277</a>
                 </div>
             </div>
             <div class="col-12 col-md-3 py-4 px-5" id="iconos">

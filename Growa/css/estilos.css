@@ -1,3 +1,9 @@
+.centradoVertical{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .titulo{
     color: #2DA736;
     font-size: 20px;
@@ -23,6 +29,16 @@
 .sectorBarraCentral a{
     border-radius: 15px;
     margin-top: 20px;
+}
+
+#imagenJalisco img, #ItalianEG img, #expoGuadalajara img, #Deutsche img {
+    width: 100vw;
+}
+
+@media (max-width: 767px) {
+    #imagenJalisco img, #ItalianEG img, #expoGuadalajara img, #Deutsche img {
+      width: 250px;
+    }
 }
 
 .boton{
@@ -51,6 +67,22 @@
 
 #footer p{
     margin: 0;
+}
+
+.botonFooter{
+    border: none;
+    background-color: #2B2B27;
+    color: white;
+    text-align: left;
+}
+
+.modal{
+    color:black;
+}
+
+.telefono{
+    text-decoration: none;
+    color: white;
 }
 
 #iconos {
