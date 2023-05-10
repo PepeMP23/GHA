@@ -31,20 +31,31 @@
     margin-top: 20px;
 }
 
+textarea {
+    width: 100%;
+    resize: none;
+}
+
 .boton{
     background-color: #2B2B27;
-    color: white;
+    color: #2DA736;
     border-radius: 2px;
 }
 
 .boton:hover{
-    background-color: black;
-    color: white;
+    background-color: #2DA736;
+    color: black;
 }
 
 #footer{
     background-color: #2B2B27;
     color: white;
+}
+
+.footerIndex2{
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 .hr-footer{
