@@ -1,0 +1,69 @@
+:root{
+    --azul-1: #2f4d6f;
+    --azul-2: #004685;
+    --azul-3: #004685;
+    --azul-4: #004685;
+    --verde-1: #5fb83b;
+    --verde-2: #7cc21d;
+    --gris-1: #757577;
+}
+
+.menu-logotipo{
+    width: 200px;
+}
+
+.nav-item{
+    font-size: 1.3rem;
+}
+
+.nav-link{
+    color: black;
+}
+
+.body{
+    background-color: white;
+}
+
+
+footer{
+    background-color: var(--azul-2);
+    overflow-x: hidden;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.custom-shape-divider-top-1694706631 {
+    background-color: var(--azul-2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1694708469 svg {
+    position: relative;
+    display: block;
+    width: calc(143% + 1.3px);
+    height: 139px;
+}
+
+.custom-shape-divider-top-1694708469 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.titulopiedepagina {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.ligapiedepagina {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
