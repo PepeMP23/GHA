@@ -73,6 +73,14 @@ header{
 .showcase .showcase-text {
     padding: 3rem;
 }
+
+.servicios-text{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+}
   
 .showcase .showcase-img {
     min-height: 30rem;
