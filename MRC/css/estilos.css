@@ -8,6 +8,21 @@
     --gris-1: #757577;
 }
 
+header{
+    margin-bottom: 96px;
+}
+
+@media (max-width: 992px){
+    header{
+        margin-bottom: 86px;
+    }  
+}
+
+
+.navbar{
+    background-color: #FFFFFF;
+}
+
 .menu-logotipo{
     width: 200px;
 }
@@ -24,6 +39,51 @@
     background-color: white;
 }
 
+.slider{
+    width: 100%;
+    min-height: 350px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulos{
+    background-color: var(--azul-3);
+}
+
+.subtitulos{
+    background-color: var(--verde-1);
+    color: white;
+    padding-left: 10px;
+}
+
+.contenedorAzul{
+    background-color: var(--azul-3);
+    color: white;
+}
+
+.contenedorVerde{
+    background-color: var(--verde-1);
+    color: white;
+}
+
+.fa-circle-check, .fa-chevron-right{
+    color: var(--verde-1);
+}
+
+.showcase .showcase-text {
+    padding: 3rem;
+}
+  
+.showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+}
+  
+@media (min-width: 768px) {
+    .showcase .showcase-text {
+      padding: 7rem;
+    }
+}
 
 footer{
     background-color: var(--azul-2);
@@ -45,15 +105,34 @@ footer{
     line-height: 0;
 }
 
-.custom-shape-divider-top-1694708469 svg {
-    position: relative;
-    display: block;
-    width: calc(143% + 1.3px);
-    height: 139px;
+.custom-shape-divider-top-1693409443 .shape-fill {
+    fill: #FFFFFF;
 }
 
-.custom-shape-divider-top-1694708469 .shape-fill {
-    fill: #FFFFFF;
+.custom-shape-divider-top-1693409443 svg {
+    position: relative;
+    display: block;
+    width: calc(158% + 1.3px);
+    height: 70px;
+} 
+
+@media (min-width: 770px){
+    .custom-shape-divider-top-1693409443 svg {
+        width: calc(143% + 1.3px);
+        height: 139px;
+    }   
+}
+
+.footer-datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo{
+    width: 100%;
+    max-width: 300px;
 }
 
 .titulopiedepagina {
