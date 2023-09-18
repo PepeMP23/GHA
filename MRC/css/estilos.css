@@ -35,6 +35,10 @@ header{
     color: black;
 }
 
+.active{
+    font-weight: bolder;
+}
+
 .body{
     background-color: white;
 }
@@ -106,6 +110,10 @@ header{
 
 .showcase .showcase-text {
     padding: 3rem;
+}
+
+.empresa{
+    margin-bottom: 3.5rem;
 }
 
 .servicios-text{
