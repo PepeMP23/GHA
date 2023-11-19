@@ -2569,7 +2569,7 @@ section {
 
 .footer:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  /* background: rgba(0, 0, 0, 0.8); */
   position: absolute;
   inset: 0;
 }
