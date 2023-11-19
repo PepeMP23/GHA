@@ -854,6 +854,20 @@ section {
 /*--------------------------------------------------------------
 # Our Projects Section
 --------------------------------------------------------------*/
+#projects-map,
+#columnas-paises {
+  padding-bottom: 0;
+}
+
+#projects {
+  margin-top: 0;
+}
+
+#columnas-procesadoras {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .projects .portfolio-flters {
   padding: 0;
   margin: 0 auto 20px auto;
