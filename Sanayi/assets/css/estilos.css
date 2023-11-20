@@ -1,33 +1,85 @@
 /* Header */
-#header{
+#header {
     background-color: white;
     z-index: 1000;
     position: fixed;
     top: 0;
 }
 
-@media (max-width: 1280px){
+@media (max-width: 1280px) {
     #header{
         margin-bottom: 88.8px;
     }  
 }
 
-#header h1{
+#header h1 {
     color: #333333;
 }
 
-#header a{
+#header a {
     /*background-color: white;*/
     color: black;
 }
 
+/* Secciones  */
+
+.section-subtitle {
+    text-align: center;
+    padding-top: 70px;
+}
+  
+.section-subtitle h2 {
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    color: #2e3135;
+}
+  
+.section-subtitle h2:before,
+.section-subtitle h2:after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: var(--color-primary);
+    display: inline-block;
+}
+  
+.section-subtitle h2:before {
+    margin: 0 15px 10px 0;
+}
+  
+.section-subtitle h2:after {
+    margin: 0 0 10px 15px;
+}
+  
+.section-subtitle p {
+    margin: 0 auto 0 auto;
+}
+  
+  @media (min-width: 1199px) {
+    .section-subtitle p {
+      max-width: 60%;
+    }
+}
+
+.section-compromiso {
+    background-color: #f5f6f7;
+}
+
+.entre-otras{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    font-size: 1.5rem;
+}
+
 /* Footer */
-#footer{
+#footer {
     background-image: none;
     background-color: #333333;
 }
 
-.footer-logo{
+.footer-logo {
     width: 100%;
     max-height:  100px;
     max-width: 100px;
