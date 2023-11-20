@@ -858,7 +858,7 @@ section {
   margin-bottom: 140px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
   #paisesEuropa {
     margin-bottom: 20px;
   }
