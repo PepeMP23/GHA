@@ -21,8 +21,13 @@
     color: black;
 }
 
-/* Secciones  */
+.titulo{
+    font-size: 56px;
+    font-weight: 500;
+    color: #fff;
+}
 
+/* Secciones  */
 .section-subtitle {
     text-align: center;
     padding-top: 70px;
