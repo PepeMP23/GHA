@@ -858,6 +858,16 @@ section {
   margin-bottom: 140px;
 }
 
+@media (max-width: 1280px) {
+  #paisesEuropa {
+    margin-bottom: 20px;
+  }
+
+  #procesadorasEuropa br {
+    display: none;
+  }
+}
+
 .projects .portfolio-flters {
   padding: 0;
   margin: 0 auto 20px auto;
