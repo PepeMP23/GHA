@@ -204,4 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
+  document.querySelectorAll('.portfolio-item').forEach((el) => {
+    el.setAttribute('data-aos', 'fade-up');
+  });
 });
