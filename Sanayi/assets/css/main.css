@@ -237,14 +237,14 @@ section {
 .header {
   z-index: 997;
   position: absolute;
-  padding: 30px 0;
+  padding: 15px 0;
   top: 0;
   left: 0;
   right: 0;
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 60px;
   margin-right: 6px;
 }
 
@@ -2611,14 +2611,14 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: var(--font-primary);
-  color: #fff;
+  color: #000;
 }
 
 .footer .footer-content .social-links a {
   font-size: 18px;
   display: inline-block;
   background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: #000;
   line-height: 1;
   margin-right: 8px;
   border-radius: 4px;
@@ -2635,7 +2635,7 @@ section {
 .footer .footer-content h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: #000;
   position: relative;
   padding-bottom: 4px;
 }
@@ -2659,14 +2659,14 @@ section {
 }
 
 .footer .footer-content .footer-links ul a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 
 .footer .footer-content .footer-links ul a:hover {
-  color: #fff;
+  color: #000;
 }
 
 .footer .footer-legal .copyright {
@@ -2677,7 +2677,7 @@ section {
 .footer .footer-legal .credits {
   padding-top: 4px;
   font-size: 13px;
-  color: #fff;
+  color: #000;
 }
 
 .footer .footer-legal .credits a {
