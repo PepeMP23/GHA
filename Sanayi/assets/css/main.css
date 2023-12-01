@@ -79,6 +79,13 @@ section {
   display: inline-block;
 }
 
+@media (max-width: 768px) {
+  .section-header h2:before,
+  .section-header h2:after {
+    display: none;
+  }
+}
+
 .section-header h2:before {
   margin: 0 15px 10px 0;
 }
