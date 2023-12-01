@@ -28,6 +28,13 @@
     color: #fff;
 }
 
+@media (max-width: 768px) {
+    .titulo {
+      font-size: 36px;
+      text-align: center;
+    }
+  }
+
 .contenido{
     padding-top: 100px;
 }
