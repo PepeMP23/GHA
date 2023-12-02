@@ -93,11 +93,11 @@
 /* Footer */
 #footer {
     background-image: none;
-    background-color: #f8f9fa;
+    background-color: #333333;
 }
 
 .footer{
-    color: rgba(0, 0, 0, 0.6);
+    color: white;
 }
 
 .footer-logo {
