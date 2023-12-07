@@ -1919,7 +1919,7 @@ section {
   color: #fff;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  font-size: 56px;
+  font-size: 3.2em;
   font-weight: 700;
   position: relative;
 }
@@ -1939,7 +1939,8 @@ section {
 
 @media (max-width: 768px) {
   .hero .info h2 {
-    font-size: 36px;
+    margin-top: 102px;
+    font-size: 2.2em;
   }
 }
 
@@ -2701,5 +2702,5 @@ section {
 }
 
 .footer .footer-legal .credits a {
-  color: var(--color-primary);
+  color: rgba(255, 255, 255, 0.6);
 }

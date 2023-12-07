@@ -28,10 +28,27 @@
     color: #fff;
 }
 
+.tituloCarrusel{
+    font-size: 13.2em;
+    color: #333333;
+}
+
+.subtituloCarrusel{
+    font-size: 3.5em;
+}
+
 @media (max-width: 768px) {
     .titulo {
-      font-size: 36px;
+      font-size: 2.2em;
       text-align: center;
+    }
+
+    .tituloCarrusel{
+        font-size: 2em;
+    }
+    
+    .subtituloCarrusel{
+        font-size: 3.5em;
     }
   }
 
@@ -80,7 +97,7 @@
 }
 
 .section-color {
-    background-color: #f5f6f7;
+    background-color: #f8f9fa;
 
 }
 
@@ -137,6 +154,16 @@
 
 .logoRedesSociales:hover {
     color: orange; 
+}
+
+.copyright{
+    color: orange;
+    font-size: 1.2em;
+}
+
+.ligaGHA{
+    text-decoration: none;
+    color: white;
 }
 
 /* hvr-grow */
