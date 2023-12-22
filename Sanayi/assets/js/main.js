@@ -208,3 +208,15 @@ document.addEventListener('DOMContentLoaded', () => {
     el.setAttribute('data-aos', 'fade-up');
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const lightbox = GLightbox({
+      selector: '.portfolio-item',
+      touchNavigation: true,
+      loop: true,
+      zoomable: true,
+      openEffect: 'fadeIn',
+      closeEffect: 'fadeOut',
+      closeButton: true
+  });
+});
